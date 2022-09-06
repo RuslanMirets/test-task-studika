@@ -1,1 +1,102 @@
-<header>Header</header>
+<header class="header">
+	<div class="container">
+		<div class="header__top">
+			<a class="header__logo" href="/">
+				<img src="@images/logo.svg" alt="Logo" />
+			</a>
+			<div class="header__city">
+				<div class="header__city-icon">
+					<img src="@images/city.svg" alt="City" />
+				</div>
+				<div class="header__city-name">Москва</div>
+			</div>
+			<div class="header__search">
+				<form class="header__search-form" autocomplete="off">
+					<input
+						class="header__search-input"
+						id="search"
+						type="text"
+						placeholder="Учебное заведение, специальность или профессия"
+						data-search
+					/>
+					<span class="header__search-icon header__search-icon--search">
+						<img src="@images/search.svg" alt="Search" />
+					</span>
+					<span
+						class="header__search-icon header__search-icon--close"
+						id="close"
+					>
+						<img src="@images/close.svg" alt="Close" />
+					</span>
+				</form>
+				<div class="header__search-result result-search active">
+					<h4 class="result-search__title">популярное:</h4>
+					<ul class="result-search__list" data-result-container></ul>
+					<template data-result-template>
+						<li class="result-search__list-item">
+							<a class="result-search__list-link" href="#">
+								<div class="result-search__list-link-title">
+									<span data-title></span>
+									<img src="" alt="" data-image />
+								</div>
+								<div
+									class="result-search__list-link-category"
+									data-category
+								></div>
+							</a>
+						</li>
+					</template>
+				</div>
+			</div>
+			<div class="header__favorite">
+				<div class="header__favorite-icon">
+					<img src="@images/favorite.svg" alt="Favorite" />
+				</div>
+				<div class="header__favorite-number">1</div>
+			</div>
+			<div class="header__user">
+				<div class="header__user-name">Екатерина</div>
+				<div class="header__user-avatar">
+					<img src="@images/avatar.png" alt="Avatar" />
+				</div>
+			</div>
+		</div>
+		<nav class="header__menu menu">
+			<ul class="menu__list">
+				<li class="menu__list-item">
+					<a href="#">Вузы</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#">Колледжи</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#">Техникумы</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#">Училища</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#">Специальности</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#">Профессии</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#">Отзывы</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#">Учебным заведениям</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#">Тест на профориентацию</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#">Тестовый пункт 1</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#">Тестовый пункт 2</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>

@@ -17,6 +17,7 @@ export const js = () => {
 				output: { filename: 'scripts.min.js' },
 			}),
 		)
+		.pipe(app.plugins.replace(/@images\//g, '../images/'))
 		.pipe(app.gulp.dest(app.path.build.js))
 		.pipe(app.plugins.browsersync.stream());
 };
